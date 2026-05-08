@@ -1,0 +1,276 @@
+body {
+    background-color: rgb(139, 136, 136);
+    margin: auto;
+    padding: 3px;
+}
+
+/*navigatiebar*/
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgb(92, 92, 92);
+    padding: 3%;
+    text-transform: uppercase;
+    box-shadow: 0 7px 2px -2px #0003, 0 2px 2px #00000024, 0 1px 10px #0000001f;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-style: double;
+    border-radius: 360px;
+    border-color: yellow;
+}
+
+nav:hover {
+    display: flex;
+    background-image: url(pixel-art-chase-1.gif);
+    background-repeat: repeat;
+    object-fit: fill;
+}
+
+a:hover {
+    background-color: rgb(159, 161, 161);
+}
+
+a {
+    color: rgb(224, 240, 3);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*plaatje op verschillende pagina's*/
+#burnoutband {
+    width: 8%;
+    height: 10%;
+    position: absolute;
+    margin-left: 17%;
+    margin-bottom: 4%;
+    border-radius: 180%;
+}
+
+#s15 {
+    width: 50%;
+    height: 45%;
+}
+
+#drift_track {
+    width: 35%;
+    height: 25%;
+}
+
+#Make-A-Wish {
+    width: 85%;
+    height: 70%;
+    padding-bottom: 5%;
+}
+
+#dad_driften {
+    width: 50%;
+    height: 50%;
+}
+
+#drift_king {
+    width: 50%;
+    height: 48%;
+}
+
+#vomar {
+    height: 100%;
+    width: 100%;
+}
+
+#auto {
+    height: 50%;
+    width: 50%;
+}
+
+#beginner-driver {
+    height: 20%;
+    width: 20%;
+}
+
+#pepsi {
+    height: 60%;
+    width: 100%;
+}
+
+#contact {
+    height: 100%;
+    width: 140%;
+}
+
+#screen {
+    display: flex;
+    height: 50%;
+    width: 17%;
+    position: absolute;
+    left: 5%;
+    top: 40%;
+}
+
+/*op maak van de pagina*/
+main {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+main section:first-child {
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+main section:nth-child(2) {
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 70%;
+    top: 40%;
+    width: 20%;
+    border-style: double;
+    border-color: yellow;
+    box-shadow: 0 7px 2px -2px #0003, 0 2px 2px #00000024, 0 1px 10px #0000001f;
+}
+
+.reclame {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 70%;
+    top: 40%;
+    height: 60%;
+    width: 10%;
+    border-style: double;
+    border-color: yellow;
+    box-shadow: 0 7px 2px -2px #0003, 0 2px 2px #00000024, 0 1px 10px #0000001f;
+}
+
+.gif {
+    display: flex;
+    position: absolute;
+    left: 70%;
+    top: 50%;
+    height: 100%;
+    width: 50%;
+    box-shadow: 0 3px 2px -2px #0003;
+}
+
+.pepsi {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 70%;
+    top: 40%;
+    padding: 1%;
+    height: 60%;
+    width: 10%;
+    border-style: double;
+    border-color: yellow;
+    box-shadow: 0 7px 2px -2px #0003, 0 2px 2px #00000024, 0 1px 10px #0000001f;
+}
+
+.banden {
+    display: flex;
+    position: absolute;
+    left: 65%;
+    top: 40%;
+    padding: 1%;
+    height: 50%;
+    width: 30%;
+}
+
+.telefoon {
+    display: flex;
+    position: absolute;
+    left: 80%;
+    width: 10%;
+    height: 50%;
+    top: 40%;
+}
+
+.opmerkingen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    border-color: red;
+    border-radius: 30px;
+    border-style: ridge;
+    padding: 1%;
+    width: 97%;
+    text-align: center;
+}
+
+/*telefoon vormating*/
+@media only screen and (max-width:600px) {
+    body {
+        flex-direction: column;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-around;
+    }
+
+    #burnoutband {
+        visibility: hidden;
+    }
+
+    .banden {
+        visibility: hidden;
+    }
+
+    .gif {
+        visibility: hidden;
+    }
+
+    .pepsi {
+        visibility: hidden;
+    }
+
+    #youtube {
+        display: flex;
+        width: 100%;
+        height: 30%;
+        padding-bottom: 4px;
+    }
+
+    .column {
+        visibility: hidden;
+    }
+
+    .reclame {
+        visibility: hidden;
+    }
+
+    #screen {
+        visibility: hidden;
+    }
+
+    .telefoon {
+        visibility: hidden;
+    }
+
+    nav:hover {
+        display: flex;
+
+    }
+
+}
