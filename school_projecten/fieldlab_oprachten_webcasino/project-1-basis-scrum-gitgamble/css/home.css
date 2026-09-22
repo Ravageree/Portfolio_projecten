@@ -1,0 +1,635 @@
+/*dit is voor de styling van de pagina*/
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+*
+{
+	margin: 0;
+	padding: 0;
+	font-family: 'Quicksand', sans-serif;
+}
+main 
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: #000;
+}
+
+#section 
+{
+	position: absolute;
+	width: 98vw;
+	height: 99vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 2px;
+	flex-wrap: wrap;
+	overflow: hidden;
+}
+#section .content {
+	position: absolute;
+    background: #222;  
+	z-index: 1000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+    width: 35cm;
+	border-radius: 4px;
+	box-shadow: 0 15px 35px rgba(0,0,0,9);
+}
+#section .content .games {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 600px;
+    height: 625px;
+}
+#section .content .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#section::before 
+{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(#000, #bf00ff, #fd00f5, #ff00a2, #ff0051, #000000);
+	animation: animate 5s linear infinite;
+}
+@keyframes animate 
+{
+	0%
+	{
+		transform: translateY(-100%);
+	}
+	100%
+	{
+		transform: translateY(100%);
+	}
+}
+section span 
+{
+	position: relative;
+	display: block;
+	width: calc(6.52vw - 2px);
+	height: calc(6.25vw - 2px);
+	background: #181818;
+	z-index: 2;
+	transition: 1.5s;
+}
+
+
+/*dit is voor je account gegevens*/
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: sans-serif;
+    background-color: #3d3d3d;
+}
+.profile {
+    display: flex;
+    flex-direction: column;
+    margin-right: 30cm;
+    color: #bf00ff;
+}
+.logout {
+    color: black;
+    font-size: 17px;
+    display: flex;
+    padding: 8px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: relative;
+}
+.logout a:before {
+    content: '';
+    position: absolute;
+    text-decoration: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #ff0000;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.5s;
+}
+.logout a:after {
+    content: '';
+    position: absolute;
+    text-decoration: none;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #ff0000;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.5s;
+}
+.logout a:hover {
+    color: #ff0000;
+    cursor: pointer;
+    text-decoration: none;
+}
+.logout a:hover::before, .logout a:hover::after{
+    transform: scaleX(1);
+    text-decoration: none;
+}
+.login {
+    color: #000;
+    font-size: 17px;
+    display: flex;
+    padding: 8px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: relative;
+}
+.login a:before {
+    content: '';
+    position: absolute;
+    text-decoration: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #02c202;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.5s;
+}
+.login a:after {
+    content: '';
+    position: absolute;
+    text-decoration: none;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #02c202;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.5s;
+}
+.login a:hover {
+    color: #02c202;
+    cursor: pointer;
+    text-decoration: none;
+}
+.login a:hover::before, .login a:hover::after{
+    transform: scaleX(1);
+    text-decoration: none;
+}
+
+#logo_foto {
+    height: 60px;
+    width: 60px;
+    transform: scale(2.0);
+    padding-bottom: 3px;
+}
+/*dit is de nav bar*/
+nav {
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #000;
+}
+input {
+    border: none;
+    border-radius: 5px;
+    color: #bf00ff;
+  }
+nav .nav {
+    list-style: none;
+}
+nav .nav a {
+    text-decoration: none;
+    color: #414040;
+    font-size: 22px;
+    display: block;
+    padding: 10px 15px;
+    position: relative;
+}
+nav .nav a:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #bf00ff;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.5s;
+}
+nav .nav a:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #bf00ff;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: all 0.5s;
+}
+nav .nav a:hover {
+    color: #bf00ff;
+}
+nav .nav a:hover::before, nav .nav a:hover:after {
+    transform: scaleX(1);
+}
+nav .nav form {
+    text-decoration: none;
+    color: #414040;
+    font-size: 22px;
+    display: inline-block;
+    padding: 10px 15px;
+    position: relative;
+    border: none;
+}
+
+nav .nav form:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    
+    background-color: #bf00ff;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.5s;
+}
+
+nav .nav form:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #bf00ff;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: all 0.5s;
+}
+
+nav .nav form:hover {
+    color: #bf00ff;
+}
+
+nav .nav form:hover::before, nav .nav form:hover:after {
+    transform: scaleX(1);
+}
+
+/*dit is de styling voor de games op de home pagina*/
+.container {
+    padding: 50px 0px;
+    height: 20cm;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+.titlegames {
+    display: flex;
+    justify-content: center;
+    color: #bf00ff;
+    background: #222;
+    border-radius: 4px;
+	box-shadow: 0 15px 35px rgba(0,0,0,9);
+}
+  
+  .parent {
+    height: 400px;
+    width: 300px;
+    padding: 30px;
+    perspective: 1000px;
+  }
+  
+  .card {
+    padding-top: 100px;
+    transform-style: preserve-3d;
+    background-image: url("https://images.pexels.com/photos/1629236/pexels-photo-1629236.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-position: center center;
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+    border-radius: 10px;
+  }
+  .card:hover {
+    background-position: 80% 20%;
+    transform: rotate3d(0.5, 1, 0, 30deg);
+  }
+  
+  .content-box {
+    height: 100%;
+    width: 100%;
+    background-color: #000000;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: rgba(0, 115, 255, 0.925) 0px 20px 50px -25px;
+    transition: all 0.5s ease-in-out;
+    padding: 50px 25px 25px 25px;
+    transform-style: preserve-3d;
+  }
+  .content-box .card-title {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 900;
+    transition: all 0.5s ease-in-out;
+    transform: translate3d(0px, 0px, 20px);
+  }
+  .content-box .card-title:hover {
+    transform: translate3d(0px, 0px, 50px);
+  }
+  .content-box .card-content {
+    padding-top: 10px;
+    font-size: 12px;
+    color: #b9b9b9;
+    transition: all 0.5s ease-in-out;
+    transform: translate3d(0px, 0px, 20px);
+  }
+  .content-box .card-content:hover {
+    transform: translate3d(0px, 0px, 50px);
+  }
+  .content-box .see-more {
+    display: block;
+    font-weight: 900;
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #0088ff;
+    padding-top: 1px;
+    transition: all 0.5s ease-in-out;
+    transform: translate3d(0px, 0px, 20px);
+    cursor: pointer;
+  }
+  .content-box .see-more:hover {
+    transform: translate3d(0px, 0px, 50px);
+  }
+  
+  .date-box {
+    position: absolute;
+    top: 78px;
+    left: 25px;
+    height: 50px;
+    width: 50px;
+    background-color: #000;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: #0066ff 0px 20px 60px 0px, #00c8ff 0px 18px 36px -18px;
+    transform: translate3d(0px, 0px, 50px);
+  }
+  .date-box i {
+    display: block;
+    text-align: center;
+  }
+  .date-box .date {
+    font-size: 30px;
+    font-weight: 900;
+    color: #0088ff;
+  }
+  
+  #card1 {
+    filter: hue-rotate(150deg);
+  }
+  
+  #card2 {
+    filter: hue-rotate(300deg);
+  }
+  
+  #card3 {
+    filter: hue-rotate(400deg);
+  }
+  #card4 {
+    filter: hue-rotate(200deg);
+  }
+  #card5 {
+    filter: hue-rotate(90deg);
+  }
+  #card6 {
+    filter: hue-rotate(700deg);
+  }
+/* styling van de leaderboard pagina */
+.place {
+    color: #bf00ff;
+    font-size: xx-large;
+    font-weight: bold;
+}
+.players {
+    border: 3px solid #bf00ff;
+    border-radius: 5px;
+}
+.player {
+    border: 1px ridge #bf00ff;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}
+.Username {
+    color: #bf00ff;
+    font-size: larger;
+}
+.points {
+    color: #bf00ff;
+}
+/*dit is voor de footer*/
+footer {
+    background: #222221;
+}
+.media_links {
+    background-color: #222221;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    padding-left: 2px;
+}
+.item a {
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    background-color: #f0f9fe;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    border: 3px solid #f0f9fe;
+    overflow: hidden;
+}
+.item a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: var(--bg-color);
+    z-index: 0;
+    scale: 1 0;
+    transform-origin: bottom;
+    transition: scale 0.5s ease;
+}
+.item:hover a::before {
+    scale: 1 1;
+}
+.icon {
+    font-size: 2rem;
+    color: #021927;
+    transition: 0.5s ease;
+    z-index: 2;
+}
+.item a:hover .icon {
+    color: #fff;
+    transform: rotateY(360deg);
+}
+.item:nth-child(1) {
+    --bg-color: #000;
+}
+.item:nth-child(2) {
+    --bg-color: #0077b5;
+}
+.item:nth-child(3) {
+    --bg-color: #f40404;
+}
+/*makers voor in de footers */
+.namen_van_makers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-family: sans-serif;
+    color: #bf00ff;
+    background-color: #222221;
+    padding-top: 5px;
+    padding-right: 23px;
+}
+.silvano{
+    text-decoration: none;
+    color: #bf00ff;
+    font-size: large;
+}
+.rafael{
+    text-decoration: none;
+    color: #bf00ff;
+    font-size: large;
+}
+.thomas {
+    text-decoration: none;
+    color: #bf00ff;
+    font-size: large;
+}
+.kevin {
+    text-decoration: none;
+    color: #bf00ff;
+    font-size: large;
+}
+.isa {
+    text-decoration: none;
+    color: #bf00ff;
+    font-size: large;
+}
+.sven {
+    text-decoration: none;
+    color: #bf00ff;
+    font-size: large;
+}
+.silvano:hover {
+    color: #ff0000;
+    cursor: pointer;
+}
+.rafael:hover {
+    cursor: pointer;
+    color: #a9a9a9;
+}
+.thomas:hover {
+    cursor: pointer;
+    color: #c006c0;
+}
+.kevin:hover {
+    cursor: pointer;
+    color: #0352c1;
+}
+.isa:hover {
+    cursor: pointer;
+    color: #008b8b;
+}
+.sven:hover {
+    cursor: pointer;
+    color: #00ff00;
+}
+/*dit is voor de rating in de footer*/
+.rating-box {
+    gap: 20px;
+    display: flex;
+    position: relative;
+    flex-direction: row-reverse;
+    justify-content: center;
+    padding-top: 5px;
+}
+
+input:not(:checked)~label{
+    color: #eeeeee3a;
+    transition: 3s;
+}
+input:checked~label {
+    color: #ffa534;
+    animation: filling-animation forwards;
+    filter: drop-shadow(0px 0px 10px #ffffff3f);
+}
+.mening {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.mening i{
+    display: flex;
+    justify-content: center;
+    color: #bf00ff;
+    padding-top: 5px;
+}
+.mening_invoer {
+ max-width: 5cm;
+ display: flex;
+}
+
+/*dit is de copyright in de footer*/
+.copyright {
+    display: flex;
+    justify-content: center;
+    color: #bf00ff;
+    padding-top: 5px;
+}
+/*dit is de styling voor de about pagina*/
+.about {
+    color: #bf00ff;
+    padding: 2px;
+}
+.about_list {
+    list-style-type: "\2B9A";
+}
+/*dit is de styling voor de contact pagina*/
+.body_contact {
+    display: flex;
+    flex-direction: row;
+}
+.invoer_contact {
+    display: flex;
+    flex-direction: column;
+}
+.contact_color {
+    color: #bf00ff;
+}
