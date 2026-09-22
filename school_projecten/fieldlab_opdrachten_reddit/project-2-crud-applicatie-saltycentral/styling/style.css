@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+  overflow: hidden;
+}
+.scrollable-section {
+    height: 73vh; 
+    overflow: auto; 
+}
+@media (max-width: 800px) {
+  .aside {
+    display: none;
+  }
+}
+@media (min-widthz: 800px) {
+  .lobby {
+    display: none;
+  }
+}
+
+ 
+nav {
+  background-color: #212831;
+}
+
+main {
+  background-color: #393e46;
+}
+
+title {
+    color: #E0C1B3;
+}
+
+.container{
+    color: #E0C1B3;
+}
+.comment {
+    background-color: #00ADB5;
+  
+}
+
+.bg-info,
+aside {
+  background: #00adb5;
+
+}
+
+
+
+.modal-content {
+  pointer-events: auto;
+}
+.thread-form {
+  margin-bottom: 5px;
+
+}
+
+
+.thread-form label {
+  margin-bottom: 1px;
+}
+
+
+.thread-form input[type="text"],
+.thread-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+ 
+}
+
+.thread-box {
+  background-color: #f0f0f0;
+  padding: 20px;
+  margin: 10px;
+}
+
+.thread-title {
+  color: blue;
+  font-size: 18px;
+}
