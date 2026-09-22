@@ -1,0 +1,379 @@
+html,
+body {
+    background-color: #faf0e6;
+    /* rustige lichte achtergrond */
+    color: #242024;
+    /* standaard tekstkleur */
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Navbar */
+.nav {
+    background-color: #242024 !important;
+    /* zwart */
+    padding: 10px;
+}
+
+.nav a {
+    color: #F3F4F5 !important;
+    /* lichtgrijs/wit */
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.nav a:hover {
+    color: #E30220 !important;
+    /* rood accent */
+}
+
+/* Search bar in navbar */
+.nav .form-control {
+    border: 1px solid #DDDDDD;
+    border-radius: 6px;
+}
+
+.nav .btn {
+    background-color: #E30220;
+    border: none;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.nav .btn:hover {
+    background-color: #BF0000;
+}
+
+.navbar-toggler {
+    background-color: #DDDDDD;
+    margin-left: auto;
+}
+
+.dropdown-menu {
+    background-color: #242024;
+}
+
+.dropdown-item:hover {
+    background-color: transparent;
+}
+
+/* Content boxes */
+.box {
+    background-color: #242024;
+    /* zwart */
+    color: #F3F4F5;
+    /* wit */
+    border-radius: 12px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    /* rode glow */
+}
+
+.team-ranks{
+        display: flex;
+            flex-direction: column;
+            align-items: center;
+}
+
+/* Extra spacing */
+.extra-info {
+    margin-bottom: 100px;
+}
+
+/*login*/
+.login {
+    display: flex;
+    background-color: #242024;
+    color: #F3F4F5;
+    border-radius: 12px;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login label {
+    font-weight: 500;
+    margin-bottom: 0.25rem;
+}
+
+.login a {
+    text-decoration: none;
+}
+
+.login button,
+.button {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    background-color: #F3F4F5;
+    color: #242024;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    padding: 0.75rem;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+#togglepassword {
+    position: relative;
+    float: right;
+    right: 19px;
+    margin-top: -32px;
+    color: black;
+}
+
+
+.account-box {
+    color: #F3F4F5;
+    border-radius: 12px;
+    padding: 1rem;
+    margin-left: 1rem;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, );
+}
+
+/*register*/
+.registratie form {
+    display: flex;
+    background-color: #242024;
+    color: #F3F4F5;
+    border-radius: 12px;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+.registratie label {
+    font-weight: 500;
+    margin-bottom: 0.25rem;
+}
+
+
+
+
+.registratie textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.registratie button {
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    padding: 0.75rem;
+    font-size: 1rem;
+}
+
+.required {
+    color: red;
+}
+
+#age-error {
+    color: red;
+    display: none;
+}
+
+#game_preferences {
+    column-count: 2;
+    column-gap: 1rem;
+    height: auto;
+}
+
+.checkbox-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.checkbox-grid label {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+/* Goudkleurige tekst */
+.selected-rainbow-six {
+    color: gold;
+    font-weight: bold;
+}
+
+/* Rainbow gradient animatie op tekst */
+.selected-fortnite {
+    background: linear-gradient(270deg, red, orange, yellow, green, blue, indigo, violet, red);
+    background-size: 400% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    animation: rainbow-move 3s linear infinite;
+    font-weight: bold;
+}
+
+@keyframes rainbow-move {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+
+#r6-gif-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    animation: fadeOut 4s forwards;
+}
+
+#r6-gif-overlay img {
+    max-width: 80%;
+    opacity: 0.8;
+    border-radius: 12px;
+}
+
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 0.8;
+    }
+
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+
+.registratie button:hover {
+    background-color: #555;
+}
+
+.team-fields {
+    display: none;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #ccc;
+}
+
+/* chat style */
+.chat-list {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.chat-messages {
+    height: 400px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.message {
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.sent {
+    background-color: #d1ffd1;
+    text-align: right;
+}
+
+.received {
+    background-color: #e4e4e4;
+    text-align: left;
+}
+
+textarea {
+    width: 100%;
+    height: 70px;
+    resize: none;
+}
+
+/* Forum */
+
+
+/* Footer */
+footer {
+    background-color: #242024;
+
+    color: #F3F4F5;
+
+}
+
+/*table */
+.table-css {
+    border-style: ridge;
+}
+
+footer a {
+    color: #DDDDDD;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #E30220;
+    /* rood accent */
+}
+
+/* vrienden notificatie */
+.friend-notification {
+    position: fixed;
+    bottom: -120px;
+    right: 20px;
+    background: #323232;
+    color: #fff;
+    border-radius: 12px;
+    padding: 15px 20px;
+    min-width: 250px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    z-index: 9999;
+}
+
+.friend-notification.show {
+    bottom: 20px;
+    opacity: 1;
+}
+
+.friend-notification.success {
+    background-color: #28a745;
+}
+
+.friend-notification.error {
+    background-color: #dc3545;
+}
+
+.friend-notification h4 {
+    margin: 0 0 5px 0;
+    font-size: 16px;
+}
+
+.friend-notification p {
+    margin: 0;
+    font-size: 14px;
+}
